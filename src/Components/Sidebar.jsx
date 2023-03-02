@@ -17,14 +17,11 @@ import {
   HomeOutlined,
   ShoppingCartOutlined,
   Groups2Outlined,
-  ReceiptLongOutlined,
   PublicOutlined,
-  PointOfSaleOutlined,
   TodayOutlined,
-  CalendarMonthOutlined,
   AdminPanelSettingsOutlined,
   TrendingUpOutlined,
-  PieChartOutlined,
+  MonitorOutlined,
 } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -32,7 +29,7 @@ import FlexBetween from "./Flexbetween";
 
 const navItems = [
   {
-    text: "Dashboard",
+    text: "Home",
     icon: <HomeOutlined />,
   },
   {
@@ -40,40 +37,24 @@ const navItems = [
     icon: null,
   },
   {
-    text: "Product",
-    icon: <ShoppingCartOutlined />,
+    text: "Dashboard",
+    icon: <MonitorOutlined />,
   },
   {
     text: "Customer",
     icon: <Groups2Outlined />,
   },
   {
-    text: "Transitions",
-    icon: <ReceiptLongOutlined />,
-  },
-  {
     text: "Geography",
     icon: <PublicOutlined />,
   },
   {
-    text: "Sales",
+    text: "Speedstats",
     icon: null,
-  },
-  {
-    text: "Overview",
-    icon: <PointOfSaleOutlined />,
   },
   {
     text: "Daily",
     icon: <TodayOutlined />,
-  },
-  {
-    text: "Monthly",
-    icon: <CalendarMonthOutlined />,
-  },
-  {
-    text: "Breakdown",
-    icon: <PieChartOutlined />,
   },
   {
     text: "Management",

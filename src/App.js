@@ -9,6 +9,8 @@ import Dashboard from "./Scenes/Dashboard";
 import Products from "./Scenes/Product";
 import Customers from "./Scenes/Customer";
 import Geography from "./Scenes/Geographgy";
+import Home from "./Scenes/Home";
+
 function App() {
   const mode = useSelector((state) => state.global.mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
@@ -20,6 +22,7 @@ function App() {
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route path="/home" element={<Home />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/product" element={<Products />} />
               <Route path="/customer" element={<Customers />} />
